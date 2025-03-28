@@ -13,7 +13,7 @@
 <!-- Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 <!-- Styles -->
-<link href="styles.css" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
 <style>
 /* SONER Logo Animation */
 @keyframes sonerScan { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -266,25 +266,6 @@
 </tbody>
 </table>
 </div>
-<h3>Tier Multipliers</h3>
-<p>Tier multipliers account for differences in EMV generation across different influencer tiers:</p>
-<div class="table-container">
-<table>
-<caption class="sr-only">Tier Multipliers</caption>
-<thead>
-<tr>
-<th scope="col">Tier</th>
-<th scope="col">Multiplier</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Tier 1</td><td>1.05</td></tr>
-<tr><td>Tier 2</td><td>1.0</td></tr>
-<tr><td>Tier 3</td><td>0.95</td></tr>
-<tr><td>Tier 4</td><td>0.75</td></tr>
-</tbody>
-</table>
-</div>
 <h3>Market-Specific Tier Multipliers</h3>
 <p>Some markets have specific tier multipliers that override the standard values:</p>
 <div class="table-container">
@@ -295,82 +276,79 @@
 <th scope="col">Market</th>
 <th scope="col">Tier</th>
 <th scope="col">Multiplier</th>
-<th scope="col">Standard Multiplier</th>
-<th scope="col">Difference</th>
 </tr>
 </thead>
 <tbody>
-<tr><td>Armenia</td><td>Tier 4</td><td>1.12</td><td>0.75</td><td>+0.37 (+49.3%)</td></tr>
-<tr><td>Bahrain</td><td>Tier 2</td><td>0.92</td><td>1.00</td><td>-0.08 (-8.0%)</td></tr>
-<tr><td>Bahrain</td><td>Tier 3</td><td>0.81</td><td>0.95</td><td>-0.14 (-14.7%)</td></tr>
-<tr><td>Bahrain</td><td>Tier 4</td><td>1.05</td><td>0.75</td><td>+0.30 (+40.0%)</td></tr>
-<tr><td>Belgium</td><td>Tier 1</td><td>1.04</td><td>1.05</td><td>-0.01 (-1.0%)</td></tr>
-<tr><td>Belgium</td><td>Tier 2</td><td>0.79</td><td>1.00</td><td>-0.21 (-21.0%)</td></tr>
-<tr><td>Belgium</td><td>Tier 3</td><td>0.87</td><td>0.95</td><td>-0.08 (-8.4%)</td></tr>
-<tr><td>Canada</td><td>Tier 1</td><td>0.70</td><td>1.05</td><td>-0.35 (-33.3%)</td></tr>
-<tr><td>Canada</td><td>Tier 2</td><td>0.87</td><td>1.00</td><td>-0.13 (-13.0%)</td></tr>
-<tr><td>Canada</td><td>Tier 3</td><td>0.86</td><td>0.95</td><td>-0.09 (-9.5%)</td></tr>
-<tr><td>Canada</td><td>Tier 4</td><td>0.54</td><td>0.75</td><td>-0.21 (-28.0%)</td></tr>
-<tr><td>Egypt</td><td>Tier 1</td><td>0.54</td><td>1.05</td><td>-0.51 (-48.6%)</td></tr>
-<tr><td>Egypt</td><td>Tier 2</td><td>0.83</td><td>1.00</td><td>-0.17 (-17.0%)</td></tr>
-<tr><td>Egypt</td><td>Tier 3</td><td>0.88</td><td>0.95</td><td>-0.07 (-7.4%)</td></tr>
-<tr><td>Egypt</td><td>Tier 4</td><td>0.58</td><td>0.75</td><td>-0.17 (-22.7%)</td></tr>
-<tr><td>Germany</td><td>Tier 1</td><td>1.15</td><td>1.05</td><td>+0.10 (+9.5%)</td></tr>
-<tr><td>Germany</td><td>Tier 2</td><td>1.15</td><td>1.00</td><td>+0.15 (+15.0%)</td></tr>
-<tr><td>Germany</td><td>Tier 3</td><td>1.10</td><td>0.95</td><td>+0.15 (+15.8%)</td></tr>
-<tr><td>Germany</td><td>Tier 4</td><td>1.00</td><td>0.75</td><td>+0.25 (+33.3%)</td></tr>
-<tr><td>Italy</td><td>Tier 1</td><td>1.10</td><td>1.05</td><td>+0.05 (+4.8%)</td></tr>
-<tr><td>Italy</td><td>Tier 2</td><td>1.05</td><td>1.00</td><td>+0.05 (+5.0%)</td></tr>
-<tr><td>Italy</td><td>Tier 3</td><td>1.00</td><td>0.95</td><td>+0.05 (+5.3%)</td></tr>
-<tr><td>Italy</td><td>Tier 4</td><td>0.80</td><td>0.75</td><td>+0.05 (+6.7%)</td></tr>
-<tr><td>Kazakhstan</td><td>Tier 1</td><td>0.95</td><td>1.05</td><td>-0.10 (-9.5%)</td></tr>
-<tr><td>Kazakhstan</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>Kazakhstan</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>Korea, Republic of</td><td>Tier 1</td><td>1.00</td><td>1.05</td><td>-0.05 (-4.8%)</td></tr>
-<tr><td>Korea, Republic of</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>Korea, Republic of</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>Netherlands</td><td>Tier 4</td><td>0.80</td><td>0.75</td><td>+0.05 (+6.7%)</td></tr>
-<tr><td>Oman</td><td>Tier 1</td><td>1.00</td><td>1.05</td><td>-0.05 (-4.8%)</td></tr>
-<tr><td>Oman</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>Oman</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>Pakistan</td><td>Tier 1</td><td>1.00</td><td>1.05</td><td>-0.05 (-4.8%)</td></tr>
-<tr><td>Pakistan</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>Pakistan</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>Poland</td><td>Tier 4</td><td>0.78</td><td>0.75</td><td>+0.03 (+4.0%)</td></tr>
-<tr><td>Qatar</td><td>Tier 1</td><td>1.00</td><td>1.05</td><td>-0.05 (-4.8%)</td></tr>
-<tr><td>Qatar</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>Qatar</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>Romania</td><td>Tier 1</td><td>1.25</td><td>1.05</td><td>+0.20 (+19.0%)</td></tr>
-<tr><td>Romania</td><td>Tier 2</td><td>1.20</td><td>1.00</td><td>+0.20 (+20.0%)</td></tr>
-<tr><td>Romania</td><td>Tier 3</td><td>1.15</td><td>0.95</td><td>+0.20 (+21.1%)</td></tr>
-<tr><td>Romania</td><td>Tier 4</td><td>1.00</td><td>0.75</td><td>+0.25 (+33.3%)</td></tr>
-<tr><td>Russian Federation</td><td>Tier 1</td><td>1.00</td><td>1.05</td><td>-0.05 (-4.8%)</td></tr>
-<tr><td>Russian Federation</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>Russian Federation</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>Saudi Arabia</td><td>Tier 1</td><td>1.00</td><td>1.05</td><td>-0.05 (-4.8%)</td></tr>
-<tr><td>Saudi Arabia</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>Saudi Arabia</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>Spain</td><td>Tier 1</td><td>1.10</td><td>1.05</td><td>+0.05 (+4.8%)</td></tr>
-<tr><td>Spain</td><td>Tier 2</td><td>1.05</td><td>1.00</td><td>+0.05 (+5.0%)</td></tr>
-<tr><td>Spain</td><td>Tier 3</td><td>1.00</td><td>0.95</td><td>+0.05 (+5.3%)</td></tr>
-<tr><td>Spain</td><td>Tier 4</td><td>0.80</td><td>0.75</td><td>+0.05 (+6.7%)</td></tr>
-<tr><td>United Arab Emirates</td><td>Tier 1</td><td>1.10</td><td>1.05</td><td>+0.05 (+4.8%)</td></tr>
-<tr><td>United Arab Emirates</td><td>Tier 2</td><td>1.05</td><td>1.00</td><td>+0.05 (+5.0%)</td></tr>
-<tr><td>United Arab Emirates</td><td>Tier 3</td><td>1.00</td><td>0.95</td><td>+0.05 (+5.3%)</td></tr>
-<tr><td>United Arab Emirates</td><td>Tier 4</td><td>0.80</td><td>0.75</td><td>+0.05 (+6.7%)</td></tr>
-<tr><td>United Kingdom</td><td>Tier 1</td><td>1.00</td><td>1.05</td><td>-0.05 (-4.8%)</td></tr>
-<tr><td>United Kingdom</td><td>Tier 2</td><td>0.95</td><td>1.00</td><td>-0.05 (-5.0%)</td></tr>
-<tr><td>United Kingdom</td><td>Tier 3</td><td>0.90</td><td>0.95</td><td>-0.05 (-5.3%)</td></tr>
-<tr><td>United Kingdom</td><td>Tier 4</td><td>0.70</td><td>0.75</td><td>-0.05 (-6.7%)</td></tr>
-<tr><td>United States</td><td>Tier 1</td><td>0.95</td><td>1.05</td><td>-0.10 (-9.5%)</td></tr>
-<tr><td>United States</td><td>Tier 2</td><td>0.90</td><td>1.00</td><td>-0.10 (-10.0%)</td></tr>
-<tr><td>United States</td><td>Tier 3</td><td>0.85</td><td>0.95</td><td>-0.10 (-10.5%)</td></tr>
-<tr><td>United States</td><td>Tier 4</td><td>0.65</td><td>0.75</td><td>-0.10 (-13.3%)</td></tr>
+<tr><td>Armenia</td><td>Tier 4</td><td>1.12</td></tr>
+<tr><td>Bahrain</td><td>Tier 2</td><td>0.92</td></tr>
+<tr><td>Bahrain</td><td>Tier 3</td><td>0.81</td></tr>
+<tr><td>Bahrain</td><td>Tier 4</td><td>1.05</td></tr>
+<tr><td>Belgium</td><td>Tier 1</td><td>1.04</td></tr>
+<tr><td>Belgium</td><td>Tier 2</td><td>0.79</td></tr>
+<tr><td>Belgium</td><td>Tier 3</td><td>0.87</td></tr>
+<tr><td>Canada</td><td>Tier 1</td><td>0.70</td></tr>
+<tr><td>Canada</td><td>Tier 2</td><td>0.87</td></tr>
+<tr><td>Canada</td><td>Tier 3</td><td>0.86</td></tr>
+<tr><td>Canada</td><td>Tier 4</td><td>0.54</td></tr>
+<tr><td>Egypt</td><td>Tier 1</td><td>0.54</td></tr>
+<tr><td>Egypt</td><td>Tier 2</td><td>0.83</td></tr>
+<tr><td>Egypt</td><td>Tier 3</td><td>0.88</td></tr>
+<tr><td>Egypt</td><td>Tier 4</td><td>0.58</td></tr>
+<tr><td>Germany</td><td>Tier 1</td><td>1.15</td></tr>
+<tr><td>Germany</td><td>Tier 2</td><td>1.15</td></tr>
+<tr><td>Germany</td><td>Tier 3</td><td>1.10</td></tr>
+<tr><td>Germany</td><td>Tier 4</td><td>1.00</td></tr>
+<tr><td>Italy</td><td>Tier 1</td><td>1.10</td></tr>
+<tr><td>Italy</td><td>Tier 2</td><td>1.05</td></tr>
+<tr><td>Italy</td><td>Tier 3</td><td>1.00</td></tr>
+<tr><td>Italy</td><td>Tier 4</td><td>0.80</td></tr>
+<tr><td>Kazakhstan</td><td>Tier 1</td><td>0.95</td></tr>
+<tr><td>Kazakhstan</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>Kazakhstan</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>Korea, Republic of</td><td>Tier 1</td><td>1.00</td></tr>
+<tr><td>Korea, Republic of</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>Korea, Republic of</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>Netherlands</td><td>Tier 4</td><td>0.80</td></tr>
+<tr><td>Oman</td><td>Tier 1</td><td>1.00</td></tr>
+<tr><td>Oman</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>Oman</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>Pakistan</td><td>Tier 1</td><td>1.00</td></tr>
+<tr><td>Pakistan</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>Pakistan</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>Poland</td><td>Tier 4</td><td>0.78</td></tr>
+<tr><td>Qatar</td><td>Tier 1</td><td>1.00</td></tr>
+<tr><td>Qatar</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>Qatar</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>Romania</td><td>Tier 1</td><td>1.25</td></tr>
+<tr><td>Romania</td><td>Tier 2</td><td>1.20</td></tr>
+<tr><td>Romania</td><td>Tier 3</td><td>1.15</td></tr>
+<tr><td>Romania</td><td>Tier 4</td><td>1.00</td></tr>
+<tr><td>Russian Federation</td><td>Tier 1</td><td>1.00</td></tr>
+<tr><td>Russian Federation</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>Russian Federation</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>Saudi Arabia</td><td>Tier 1</td><td>1.00</td></tr>
+<tr><td>Saudi Arabia</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>Saudi Arabia</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>Spain</td><td>Tier 1</td><td>1.10</td></tr>
+<tr><td>Spain</td><td>Tier 2</td><td>1.05</td></tr>
+<tr><td>Spain</td><td>Tier 3</td><td>1.00</td></tr>
+<tr><td>Spain</td><td>Tier 4</td><td>0.80</td></tr>
+<tr><td>United Arab Emirates</td><td>Tier 1</td><td>1.10</td></tr>
+<tr><td>United Arab Emirates</td><td>Tier 2</td><td>1.05</td></tr>
+<tr><td>United Arab Emirates</td><td>Tier 3</td><td>1.00</td></tr>
+<tr><td>United Arab Emirates</td><td>Tier 4</td><td>0.80</td></tr>
+<tr><td>United Kingdom</td><td>Tier 1</td><td>1.00</td></tr>
+<tr><td>United Kingdom</td><td>Tier 2</td><td>0.95</td></tr>
+<tr><td>United Kingdom</td><td>Tier 3</td><td>0.90</td></tr>
+<tr><td>United Kingdom</td><td>Tier 4</td><td>0.70</td></tr>
+<tr><td>United States</td><td>Tier 1</td><td>0.95</td></tr>
+<tr><td>United States</td><td>Tier 2</td><td>0.90</td></tr>
+<tr><td>United States</td><td>Tier 3</td><td>0.85</td></tr>
+<tr><td>United States</td><td>Tier 4</td><td>0.65</td></tr>
 </tbody>
 </table>
 </div>
 <p>These market-specific tier multipliers are automatically applied when calculating EMV for the respective markets. This allows for more accurate EMV predictions by accounting for the unique characteristics of each market-tier combination.</p>
-<p>For example, in Armenia, Tier 4 influencers have a significantly higher impact than the standard model would predict, so their tier multiplier is adjusted upward accordingly.</p>
 </div>
 <div aria-labelledby="example-tab-btn" class="tab-content" id="example-tab" role="tabpanel">
 <h3>Example Calculation</h3>
@@ -436,7 +414,7 @@
 </div>
 </div>
 <!-- Scripts -->
-<script src="calculator.js"></script>
-<script src="ui.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/ui.js"></script>
 </body>
 </html>
